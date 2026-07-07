@@ -174,7 +174,7 @@ Este projeto foi desenvolvido como trabalho final da disciplina de Inteligência
 
 ## 👨‍💻 Autor
 
-Gabriel César
+Gabriel César, Isabella Secchin, Ronaldo Porto Filho
 
 Curso: Ciência da Computação – UESC
 
