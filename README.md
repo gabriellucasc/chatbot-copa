@@ -105,7 +105,7 @@ GEMINI_API_KEY=SUA_CHAVE_GEMINI
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/chatbot-copa.git
+git clone https://github.com/gabriellucasc/chatbot-copa.git
 ```
 
 Entre na pasta:
