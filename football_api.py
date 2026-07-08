@@ -26,12 +26,29 @@ def buscar_jogos_copa():
         return []
 
 
+def traduzir_status(status):
+    status_traduzido = {
+        "SCHEDULED": "Agendado",
+        "TIMED": "Com horário definido",
+        "IN_PLAY": "Em andamento",
+        "PAUSED": "Intervalo",
+        "FINISHED": "Finalizado",
+        "POSTPONED": "Adiado",
+        "SUSPENDED": "Suspenso",
+        "CANCELED": "Cancelado"
+    }
+
+    return status_traduzido.get(status, status)
+
+
 def formatar_jogos_para_gemini(jogos):
     linhas = []
 
     for jogo in jogos:
         data = jogo.get("utcDate", "Data não informada")
-        status = jogo.get("status", "Status não informado")
+
+        status_original = jogo.get("status", "Status não informado")
+        status = traduzir_status(status_original)
 
         casa = jogo.get("homeTeam", {}).get("name") or "A definir"
         fora = jogo.get("awayTeam", {}).get("name") or "A definir"
