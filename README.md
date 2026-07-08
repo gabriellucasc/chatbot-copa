@@ -172,7 +172,7 @@ Este projeto foi desenvolvido como trabalho final da disciplina de Inteligência
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 Gabriel César, Isabella Secchin, Ronaldo Porto Filho
 
